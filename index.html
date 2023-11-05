@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Intra Cerámica</title>
+		<link rel="shortcut icon" href="logo/logo_icon.ico" type="image/x-icon">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+		rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+		crossorigin="anonymous">
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<header>
+			<div class="logo" id="circular"><img src="logo/logo_chico.png"></div>
+			<div class="logo"><img src="logo/intra_tipografía_trans_letras_blancas.png" height="150px"></div> 
+			<div class="container-icon">
+				<div class="container-cart-icon">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="icon-cart"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+						/>
+					</svg>
+					<div class="count-products">
+						<span id="contador-productos">0</span>
+					</div>
+				</div>
+
+				<div class="container-cart-products hidden-cart">
+					<div class="row-product hidden">
+						<div class="cart-product">
+							<div class="info-cart-product">
+								<span class="cantidad-producto-carrito"></span>
+								<p class="titulo-producto-carrito"></p>
+								<span class="precio-producto-carrito"></span>
+							</div>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								class="icon-close"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M6 18L18 6M6 6l12 12"
+								/>
+							</svg>
+						</div>
+					</div>
+
+					<div class="cart-total hidden">
+						<h3>Total:</h3>
+						<span class="total-pagar"></span>
+					</div>
+					<p class="cart-empty">El carrito está vacío</p>
+				</div>
+			</div>
+			
+		</header>
+		<div><nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+			  <a class="navbar-brand" href="#">Intra Cerámica</a>
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav">
+				  <li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="#">Nuestra Filosofía</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#">Piezas únicas</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#">Creadoras</a>
+				  </li>
+				  <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					  Categorías
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+					  <li><a class="dropdown-item" href="#">Joyas</a></li>
+					  <li><a class="dropdown-item" href="#">Budas</a></li>
+					  <li><a class="dropdown-item" href="#">Altares</a></li>
+					</ul>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+		  </nav></div>
+		<div class="container-items">
+			<div class="item">
+				<figure>
+					<img
+						src="images/anforita.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Ánfora Aromática</h2>
+					<p class="price">$800</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="images/budaEnAltar.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Buda - Escultura (10cm)</h2>
+					<p class="price">$5000</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="images/aroAro.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Aros en Gres</h2>
+					<p class="price">$1100</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="images/candelabro.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Candelabro Flor de Loto</h2>
+					<p class="price">$1500</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="images/altares.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Altares</h2>
+					<p class="price">$2000</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img
+						src="images/arito.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Aros con Figuras</h2>
+					<p class="price">$900</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+		</div>
+		<footer class="footer w-100 m-0 p-0">
+        
+			<ul class="w-100 d-flex px-0 py-4 flex-column align-items-center gap-2 flex-lg-row justify-content-lg-center gap-sm-3 gap-lg-5 text-center m-0">
+		
+				<a class="link-light text-decoration-none m-sm-auto" href="#">Quiénes somos</a>
+				<a class="link-light text-decoration-none m-sm-auto" href="#">Contactos</a>
+				<a class="link-light text-decoration-none m-sm-auto" href="#">Seguinos en redes</a>
+				<a class="link-light text-decoration-none m-sm-auto" href="#">Talleres y Cursos</a>
+				<a class="link-light text-decoration-none m-sm-auto" href="#">Clientes</a>
+				<a class="link-light text-decoration-none m-sm-auto" href="#">Nuestra Filosofía</a>
+		
+			</ul>
+		
+		</footer>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+		crossorigin="anonymous"></script>
+		<script src="index.js"></script>
+	</body>
+</html>
